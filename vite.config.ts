@@ -24,9 +24,23 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          'vant': ['vant']
+          'vant': ['vant'],
+          'axios': ['axios'],
+          'vue-router': ['vue-router'],
+          'vue': ['vue'],
+          'pinia': ['pinia']
         }
       }
     }
-  }
+  },
+  optimizeDeps: {
+    include: [
+      'axios',
+      'vant',
+      'vue-router',
+      'vue',
+      'pinia'
+    ]
+  },
+  base: '/<REPO>/'
 })
