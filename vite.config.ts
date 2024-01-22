@@ -18,7 +18,7 @@ export default defineConfig({
     port: 1234,
   },
   // github pages
-  base: '/ApplicationShare/dist/',
+  base: '/applicationshare/',
   build: {
     outDir: 'dist'
   }
