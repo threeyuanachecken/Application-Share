@@ -16,9 +16,8 @@ import 'vant/es/toast/style';
 const cardlist = ref([
 	{ id: 1, title: '加速器&电报', link: `链接: https://caiyun.139.com/m/i?105Cq235Zq5sH 
 复制本段信息，打开「中国移动云盘APP」获取。人人不限速，移动用户免流量！`, content: '里面有两个加速器和Telegram，复制链接打开中国移动云盘' },
-	{ id: 2, title: '油管', link: `链接: https://caiyun.139.com/m/i?105Cf4Qnb5neD
-复制本段信息，打开「中国移动云盘APP」获取。人人不限速，移动用户免流量！
-`, content: '移动端油管app，不支持ios，里面两个软件都要下载，必须先打开MicroG，否则打不开油管' }
+	{ id: 2, title: '油管', link: `链接: https://caiyun.139.com/m/i?105Cf4Qnb5neD 
+复制本段信息，打开「中国移动云盘APP」获取。人人不限速，移动用户免流量！`, content: '移动端油管app，不支持ios，里面两个软件都要下载，必须先打开MicroG，否则打不开油管' }
 ])
 const isChecked = ref<number>(0)
 
