@@ -16,5 +16,17 @@ export default defineConfig({
   server: {
     host: '192.168.1.9',
     port: 1234,
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vant': ['vant']
+        }
+      }
+    }
   }
 })
