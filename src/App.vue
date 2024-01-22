@@ -21,8 +21,6 @@ const music_1 = ref<HTMLAudioElement | null>(null)
 watch(() => configStore.isPlaying, (newVal, oldVal) => {
   if (newVal && music_1.value) {
     music_1.value.play()
-  } else if(!newVal && music_1.value) {
-    music_1.value.pause()
   }
 })
 
