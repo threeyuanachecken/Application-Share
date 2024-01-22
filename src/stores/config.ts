@@ -35,9 +35,13 @@ export const useConfigStore = defineStore('config', {
 			this.theme = theme
 			window.localStorage.setItem('theme', theme)
 		},
-		async musicPlay() {
+		async musicPlay(): Promise<void> {
 			const res = await getMusicApi()
 			console.log(res);
+			const str = res.data.info.mp3url.slice(-3)
+			if (str !== 'mp3') {
+				return this.musicPlay()
+			}
 			this.music = res.data.info
 			this.isPlaying ++
 		}
