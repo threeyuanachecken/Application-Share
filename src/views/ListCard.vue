@@ -60,12 +60,13 @@ const handleCopy = (link: string) => {
 		height: 200px;
 		margin-bottom: 20px;
 		border-radius: 5px;
-		background-color: var(--home-cell-bg-color);
-		color: var(--home-font-color-b);
+		/* background-color: var(--home-cell-bg-color); */
+		color: #fff;
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 		transition: all 0.3s;
 		overflow: hidden;
 		cursor: pointer;
+		background-image: url('@/images/list_bg1.png');
 		&:hover {
 			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 		}
