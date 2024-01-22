@@ -11,11 +11,16 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+    },
   },
   server: {
     host: '192.168.1.9',
     port: 1234,
   },
-  base: './'
+  // github pages
+  base: '/ApplicationShare/dist/',
+  build: {
+    outDir: 'dist'
+  }
+
 })
