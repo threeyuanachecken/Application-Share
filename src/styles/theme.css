@@ -7,8 +7,8 @@
 }
 /* dark 主题颜色 */
 :root:root.van-theme-dark {
-  --van-home-bg-color: #202124;
-  --home-bg-color: #202124;
-  --home-cell-bg-color: #2D2E31;
+  --van-home-bg-color: #161824;
+  --home-bg-color: #161824;
+  --home-cell-bg-color: #1D1F2B;
   --home-font-color-b: #fff;
 }

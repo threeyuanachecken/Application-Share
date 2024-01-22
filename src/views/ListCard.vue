@@ -60,12 +60,12 @@ const handleCopy = (link: string) => {
 		height: 200px;
 		margin-bottom: 20px;
 		border-radius: 5px;
-		/* background-color: var(--home-cell-bg-color); */
 		color: #fff;
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 		transition: all 0.3s;
 		overflow: hidden;
 		cursor: pointer;
+		position: relative;
 		background-image: url('@/images/list_bg1.png');
 		&:hover {
 			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -98,21 +98,22 @@ const handleCopy = (link: string) => {
 		height: 40px;
 		width: 70px;
 		line-height: 40px;
+		position: absolute;
 		padding: 0 10px;
 		font-size: 12px;
-		text-align: right;
+		right: 0;
 		cursor: pointer;
 		text-align: center;
 		transition: all 0.3s;
-		transform: translateX(200px);
+		transform: translateX(100px);
 		background-color: #04BEA8;
 		border-radius: 5px;
 		&.active {
-			transform: translateX(100px);
+			transform: translateX(0);
 		}
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 765px) {
 		.card_title {
 			font-size: 24px;
 		}
@@ -122,9 +123,8 @@ const handleCopy = (link: string) => {
 		.card_copy_btn {
 			font-size: 16px;
 			width: 100px;
-			transform: translateX(500px);
 			&.active {
-				transform: translateX(400px);
+				transform: translateX(5px);
 			}
 		}
 	}
